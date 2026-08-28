@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/zh1peng/conlens-resources/schemas/atlas.schema.json",
+  "title": "ConLens atlas manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "atlas_id",
+    "atlas_version",
+    "title",
+    "n_nodes",
+    "nodes_file",
+    "node_order_sha256",
+    "default_edge_universe"
+  ],
+  "properties": {
+    "$schema": {"type": "string"},
+    "schema_version": {"type": "string"},
+    "atlas_id": {"type": "string", "minLength": 1},
+    "atlas_version": {"type": "string", "minLength": 1},
+    "title": {"type": "string", "minLength": 1},
+    "n_nodes": {"type": "integer", "minimum": 1},
+    "nodes_file": {"type": "string", "minLength": 1},
+    "node_order_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "default_edge_universe": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["construction", "directed", "diagonal"],
+      "properties": {
+        "construction": {"enum": ["complete", "explicit"]},
+        "directed": {"type": "boolean"},
+        "diagonal": {"type": "boolean"},
+        "edges_file": {"type": "string"}
+      }
+    },
+    "references": {
+      "type": "array",
+      "items": {"type": "string"}
+    }
+  }
+}

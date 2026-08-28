@@ -1,0 +1,10 @@
+* text=auto
+*.json text eol=lf
+*.md text eol=lf
+*.csv text eol=lf
+*.tsv text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.png binary
+*.nii binary
+*.nii.gz binary

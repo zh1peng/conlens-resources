@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/zh1peng/conlens-resources/schemas/registry.schema.json",
+  "title": "ConLens resource registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "registry_version", "resources"],
+  "properties": {
+    "$schema": {"type": "string"},
+    "schema_version": {"type": "string"},
+    "registry_version": {"type": "string"},
+    "resources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["resource_id", "resource_version", "kind", "path", "atlases"],
+        "properties": {
+          "resource_id": {"type": "string", "minLength": 1},
+          "resource_version": {"type": "string", "minLength": 1},
+          "kind": {
+            "enum": ["node_features", "edge_features", "edge_sets"]
+          },
+          "path": {"type": "string", "minLength": 1},
+          "atlases": {
+            "type": "array",
+            "items": {"type": "string", "minLength": 1},
+            "uniqueItems": true
+          },
+          "tags": {
+            "type": "array",
+            "items": {"type": "string"},
+            "uniqueItems": true
+          }
+        }
+      }
+    }
+  }
+}
