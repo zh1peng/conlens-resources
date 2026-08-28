@@ -1,0 +1,7 @@
+{
+  "status": "draft-placeholder",
+  "atlas_id": "schaefer100-7net",
+  "title": "Schaefer 100-parcel 7-network cortical atlas",
+  "expected_n_nodes": 100,
+  "nodes_file": "nodes.tsv"
+}

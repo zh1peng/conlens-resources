@@ -5,8 +5,8 @@
 and connectome annotations while ConLens remains responsible for transformation,
 edge-set construction, enrichment, and inference.
 
-This repository is currently a schema-only skeleton. It does not yet publish any
-curated resource data.
+This repository is currently a draft skeleton. The paths below reserve the initial
+atlas and resource layout, but do not yet publish curated resource values.
 
 ## Design principles
 
@@ -28,7 +28,19 @@ conlens-resources/
 │   ├── atlas.schema.json
 │   └── resource.schema.json
 ├── atlases/
+│   ├── dk68/
+│   ├── schaefer100-7net/
+│   ├── schaefer200-7net/
+│   └── schaefer300-7net/
 ├── resources/
+│   ├── pet/
+│   │   └── receptor-abundance-react/
+│   ├── transcriptomics/
+│   ├── gradients/
+│   ├── cytoarchitecture/
+│   ├── structural-connectivity/
+│   ├── disease-vulnerability/
+│   └── canonical-networks/
 ├── tools/
 └── tests/
 ```
@@ -39,8 +51,9 @@ manifest, data files, provenance, citations, and reproducible build materials.
 
 ## Status
 
-The initial PET receptor/transporter abundance collection and the ConLens resource
-loader will be developed in a later phase.
+All newly reserved atlas manifests and PET tables are marked as draft placeholders.
+The initial PET receptor/transporter abundance collection, provenance, checksums, and
+the ConLens resource loader will be developed in a later phase.
 
 ## Licensing
 

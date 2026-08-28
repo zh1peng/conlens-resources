@@ -1,0 +1,13 @@
+{
+  "status": "draft-placeholder",
+  "resource_id": "pet/receptor-abundance-react",
+  "title": "PET receptor/transporter abundance, REACT-inspired processing",
+  "kind": "node_features",
+  "features_file": "features.tsv",
+  "atlases": {
+    "dk68": "data/dk68.node_features.csv",
+    "schaefer100-7net": "data/schaefer100-7net.node_features.csv",
+    "schaefer200-7net": "data/schaefer200-7net.node_features.csv",
+    "schaefer300-7net": "data/schaefer300-7net.node_features.csv"
+  }
+}

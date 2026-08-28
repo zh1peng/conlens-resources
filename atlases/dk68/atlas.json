@@ -1,0 +1,7 @@
+{
+  "status": "draft-placeholder",
+  "atlas_id": "dk68",
+  "title": "Desikan-Killiany 68 cortical atlas",
+  "expected_n_nodes": 68,
+  "nodes_file": "nodes.tsv"
+}
