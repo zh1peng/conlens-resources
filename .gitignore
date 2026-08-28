@@ -5,6 +5,8 @@ __pycache__/
 .mypy_cache/
 .venv/
 build/
+!resources/pet/receptor-abundance-react/build/
+!resources/pet/receptor-abundance-react/build/README.md
 dist/
 *.tmp
 .DS_Store
